@@ -78,7 +78,7 @@
     font-weight: 600;
  }
 
- #testimonial-1 img, #testimonial-4 img {
+ #testimonial-1 + .header img, #testimonial-4 + .header img {
     border: 2px solid rgba(196, 162, 246, 1)
  }
 
