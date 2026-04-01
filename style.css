@@ -10,9 +10,8 @@
     font-size: 13px;
  }
 
- #testimonial-grid-container {
+ .testimonial-grid-container {
     padding: 10% 8%;
-
  }
 
  #testimonial-1 {
@@ -36,6 +35,14 @@
     color: white;
  }
 
+  #testimonial-1 + .header img, #testimonial-4 + .header img {
+    border: 2px solid rgba(196, 162, 246, 1)
+ }
+
+ #quotes-icon {
+    display: none;
+ }
+
  .grid-item {
     margin-bottom: 20px;
     padding: 30px;
@@ -56,57 +63,45 @@
     margin-bottom: 20px;
  }
 
- #header-content {
+ .header-content {
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 10px;
  }
 
- #testimonial-content {
+ .testimonial-content {
     font-size: 0.8rem;
     line-height: 1.2;
  }
 
- #profile p {
+ .profile p {
     opacity: 70%;
     font-size: 0.7rem;
  }
 
- #profile .profile-name {
+ .profile .profile-name {
     opacity: 100%;
     font-size: 0.8rem;
     font-weight: 600;
  }
 
- #testimonial-1 + .header img, #testimonial-4 + .header img {
-    border: 2px solid rgba(196, 162, 246, 1)
- }
-
- #quotes-icon {
-    display: none;
- }
 
  @media (min-width:576px) {
 
-    #testimonial-grid-container,
+    .testimonial-grid-container,
     #main-left,
     #top,
     #bottom {
         display: flex;
     }
-    
-    #testimonial-grid-container {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
 
     #main-left {
         flex-direction: column;
-        flex-basis: 75%;
+        flex-basis: 80%;
     }
 
     #testimonial-5 {
-        flex-basis: 25%;
+        flex-basis: 20%;
     }
 
     #top, #bottom {
@@ -121,22 +116,9 @@
         flex-basis: 35%;
     }
 
-    #main-left .grid-item {
-        margin-right: 20px;
-    }
-
-    .grid-item {
-        border-radius: 5px;
-    }
-
     #testimonial-1 {
         position: relative;
         z-index: 0;
-    }
-
-    .header, #header-content, #testimonial-content {
-        position: relative;
-        z-index: 2;
     }
 
     #quotes-icon {
@@ -147,4 +129,21 @@
         z-index: 1;
     }
 
+    #main-left .grid-item {
+        margin-right: 20px;
+    }
+
+    .testimonial-grid-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        border-radius: 5px;
+    }
+
+    .header, .header-content, .testimonial-content {
+        position: relative;
+        z-index: 2;
+    }
  }
